@@ -1,0 +1,140 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUAS?</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pode Tomar duas HOJE ?</h1>
+    <div class="buttons">
+        <button id="sim">Sim</button>
+        <button id="nao">Não</button>
+    </div>
+
+    <script>
+        const simButton = document.getElementById("sim");
+        const naoButton = document.getElementById("nao");
+
+        simButton.addEventListener("click", () => {
+            alert("VAMOOOOOOOOOOOOOOOOOOOO");
+        });
+
+        const handleNao = () => {
+            naoButton.style.position = "absolute";
+
+            const randTop = Math.random() * (window.innerHeight - 50);
+            const randLeft = Math.random() * (window.innerWidth - 50);
+
+            naoButton.style.top = randTop + "px";
+            naoButton.style.left = randLeft + "px";
+        };
+
+        naoButton.addEventListener("mouseover", handleNao);
+        naoButton.addEventListener("click", handleNao);
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUAS?</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #mensagem {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pode Tomar duas HOJE ?</h1>
+    <div class="buttons">
+        <button id="sim">Sim</button>
+        <button id="nao">Não</button>
+    </div>
+
+    <div id="mensagem">VAMOOOOOOOOOOOOOOOOOOOO</div>
+
+    <script>
+        const simButton = document.getElementById("sim");
+        const naoButton = document.getElementById("nao");
+        const mensagem = document.getElementById("mensagem");
+
+        simButton.addEventListener("click", () => {
+            mensagem.style.display = "block";
+        });
+
+        const handleNao = () => {
+            naoButton.style.position = "absolute";
+
+            const randTop = Math.random() * (window.innerHeight - 50);
+            const randLeft = Math.random() * (window.innerWidth - 50);
+
+            naoButton.style.top = randTop + "px";
+            naoButton.style.left = randLeft + "px";
+        };
+
+        naoButton.addEventListener("mouseover", handleNao);
+        naoButton.addEventListener("click", handleNao);
+    </script>
+</body>
+</html>
